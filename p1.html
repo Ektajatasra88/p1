@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="p1.css/">
+<link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Archivo+Black&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        font-family: 'Archivo Black', sans-serif;
+        height: 800px;
+
+
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+
+        background-color: #a3d4e2;
+
+
+    }
+
+    .left img {
+        width: 90px;
+    }
+
+
+    .mid {
+        display: block;
+        width: 45%;
+        margin: 20px auto;
+
+        border-radius: 30px;
+        background-color: #a3d4e2;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 29px;
+        display: inline-block;
+
+        border-radius: 30px;
+    }
+
+    .btn {
+        margin: 5px 6px;
+        font-size: 10px;
+        font-family: 'Archivo Black', sans-serif;
+        padding: 2px;
+        background-color: #a3d4e2;
+        text-align: center;
+        border-radius: 25px;
+    }
+
+    .btn:hover {
+        color: rgb(31 21 183);
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        margin: 10px;
+        padding: 0px;
+        font-size: small;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(31 21 183);
+    }
+
+    .container {
+        border: 2px solid black;
+        margin: 100px;
+        padding: 30px;
+        width: 33%;
+        border-radius: 25px;
+    }
+
+    .form-group input {
+        font-family: 'Archivo Black', sans-serif;
+        text-align: center;
+        font-size: 10px;
+        margin: 4px;
+        padding: 10px;
+        width: 280px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #a3d4e2;
+        color: black;
+
+    }
+
+    .container h3 {
+        text-align: center;
+    }
+
+    .container button {
+
+        
+        display: block;
+        width: 30%;
+        margin: 12px auto;
+        background-color: #acdce0;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.png" alt="">
+
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Cal</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the best gym</h3>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your contact number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
